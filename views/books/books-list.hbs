@@ -1,0 +1,11 @@
+{{!-- views/books/books-list.hbs --}}
+<h1>BOOKS</h1>
+
+{{#each books}}
+<div class="card">
+    <h3>{{title}}</h3>
+    <p>By: {{author}}</p> {{!-- additional book property --}}
+    <a href="/books/{{_id}}">See details</a> {{!-- link that points to the details page --}}
+    <a href="/books/{{_id}}/edit">Edit</a>
+</div>
+{{/each}}
